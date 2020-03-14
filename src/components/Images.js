@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Images.css';
 
-class Calculator extends Component {
+class Images extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -53,4 +53,4 @@ class Calculator extends Component {
     )
   }
 }
-export default Calculator;
+export default Images;
