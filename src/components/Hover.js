@@ -11,7 +11,6 @@ class Hover extends Component {
         return (
             <div>
                 <Tooltip title="Delete">
-
                     <button onClick={this.onRotateEverythingHandler}>Hover Here</button>
                 </Tooltip>
             </div>

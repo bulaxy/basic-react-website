@@ -10,17 +10,13 @@ class Calculator extends Component {
     }
   }
 
-  numChangehandler = e => {
-    this.setState({ num1: e.target.value })
+  handleChange = e => {
+    let obj = {};
+    obj[e.target.id] = e.target.value
+    console.log(obj)
+    this.setState(obj);
   }
 
-  numChangehandler2 = e => {
-    this.setState({ num2: e.target.value })
-  }
-
-  numChangehandler3(e) {
-    this.setState({ num3: e.target.value })
-  }
   render() {
     var finalValue = 0
     var num1 = this.state.num1
@@ -32,23 +28,20 @@ class Calculator extends Component {
     return (
       <div>
         <input
-          onChange={this.numChangehandler}
+          id="num1"
+          onChange={this.handleChange}
           value={this.state.num1}
         />
         +
         <input
-          onChange={value => {
-            this.numChangehandler2(value)
-          }
-          }
+          id="num2"
+          onChange={this.handleChange}
           value={this.state.num2}
         />
         +
         <input
-          onChange={value => {
-            this.numChangehandler3(value)
-          }
-          }
+          id="num3"
+          onChange={this.handleChange}
           value={this.state.num3}
         />
         =
