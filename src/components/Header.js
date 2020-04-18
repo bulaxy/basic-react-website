@@ -15,6 +15,7 @@ class Header extends Component {
                     <Link to="/hovor">Hovor Text</Link><span>   </span>
                     <Link to="/rotate">Rotates</Link><span>   </span>
                     <Link to="/moving">Moving Obj</Link><span>   </span>
+                    <Link to="/redux">Redux Items</Link><span>   </span>
                 </div>
             </header>
         )

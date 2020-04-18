@@ -7,6 +7,7 @@ import Grid from '@material-ui/core/Grid';
 import Hover from './Hover'
 import Table from './Table'
 import MovingObj from './MovingObj'
+import ReduxItems from './ReduxItems'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 class App extends Component {
   constructor(props) {
@@ -35,6 +36,7 @@ class App extends Component {
               <Route path="/moving" component={MovingObj} />
               <Route path="/hovor" component={Hover} />
               <Route path="/add" component={Calcaulator} />
+              <Route path="/redux" component={ReduxItems} />
               <Route path="/rotate">
                 <Images toggle={this.toggleRotateClass} />
               </Route>
